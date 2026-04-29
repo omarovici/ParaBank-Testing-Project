@@ -4,14 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03701fbc-3482-49d5-9644-b7d241b8e1b6" name="Changes" comment="Initial Project">
+    <list default="true" id="03701fbc-3482-49d5-9644-b7d241b8e1b6" name="Changes" comment="Adding Selenium &amp; TestNG Dependencies &amp; Removing AppTest.java">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/LoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -33,6 +40,9 @@
   "fromUser": false
 }]]></component>
   <component name="ProjectId" id="3D2eGHg7RkZ4w4Tt6WRiZLRWyqa" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -44,6 +54,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "TestNG.LoginTest.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
@@ -71,7 +82,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777484526905</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adding Selenium &amp; TestNG Dependencies &amp; Removing AppTest.java">
+      <option name="closed" value="true" />
+      <created>1777484992081</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1777484992081</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -79,6 +98,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Project" />
+    <MESSAGE value="Adding Selenium &amp; TestNG Dependencies &amp; Removing AppTest.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Selenium &amp; TestNG Dependencies &amp; Removing AppTest.java" />
   </component>
 </project>
