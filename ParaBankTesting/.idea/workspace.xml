@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03701fbc-3482-49d5-9644-b7d241b8e1b6" name="Changes" comment="Adding Selenium &amp; TestNG Dependencies &amp; Removing AppTest.java">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/LoginTest.java" afterDir="false" />
+    <list default="true" id="03701fbc-3482-49d5-9644-b7d241b8e1b6" name="Changes" comment="Simple LoginTest for testing the ParaBank Website">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/OpenNewAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,22 +23,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "omarovici"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;omarovici&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/omarovici/ParaBank-Testing-Project.git",
-    "accountId": "1429a6ab-711a-4267-91fb-40985bbaad03"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/omarovici/ParaBank-Testing-Project.git&quot;,
+    &quot;accountId&quot;: &quot;1429a6ab-711a-4267-91fb-40985bbaad03&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1,
-  "fromUser": false
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3D2eGHg7RkZ4w4Tt6WRiZLRWyqa" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -55,6 +55,8 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "TestNG.LoginTest.executor": "Run",
+    "TestNG.OpenNewAccount.executor": "Run",
+    "TestNG.OpenNewAccount.openNewAccount.executor": "Debug",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
@@ -90,7 +92,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777484992081</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Simple LoginTest for testing the ParaBank Website">
+      <option name="closed" value="true" />
+      <created>1777486081452</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1777486081453</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,6 +109,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Project" />
     <MESSAGE value="Adding Selenium &amp; TestNG Dependencies &amp; Removing AppTest.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding Selenium &amp; TestNG Dependencies &amp; Removing AppTest.java" />
+    <MESSAGE value="Simple LoginTest for testing the ParaBank Website" />
+    <option name="LAST_COMMIT_MESSAGE" value="Simple LoginTest for testing the ParaBank Website" />
   </component>
 </project>
