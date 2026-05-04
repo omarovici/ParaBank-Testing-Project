@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03701fbc-3482-49d5-9644-b7d241b8e1b6" name="Changes" comment="Open New Account Test">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/TransferFundsTest.java" afterDir="false" />
+    <list default="true" id="03701fbc-3482-49d5-9644-b7d241b8e1b6" name="Changes" comment="Transfer Funds Test">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/UpdateContactInfoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/OpenNewAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/OpenNewAccountTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +58,7 @@
     "TestNG.OpenNewAccount.executor": "Run",
     "TestNG.OpenNewAccount.openNewAccount.executor": "Debug",
     "TestNG.TransferFundsTest.executor": "Run",
+    "TestNG.UpdateContactInfoTest.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
@@ -110,7 +110,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777926680552</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Transfer Funds Test">
+      <option name="closed" value="true" />
+      <created>1777928128425</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1777928128425</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +129,7 @@
     <MESSAGE value="Adding Selenium &amp; TestNG Dependencies &amp; Removing AppTest.java" />
     <MESSAGE value="Simple LoginTest for testing the ParaBank Website" />
     <MESSAGE value="Open New Account Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Open New Account Test" />
+    <MESSAGE value="Transfer Funds Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Transfer Funds Test" />
   </component>
 </project>
