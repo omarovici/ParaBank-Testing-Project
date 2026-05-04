@@ -1,7 +1,6 @@
 package org.example;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,7 +12,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class OpenNewAccount {
+public class OpenNewAccountTest {
     WebDriver driver;
     @BeforeTest
     public void openURL(){
