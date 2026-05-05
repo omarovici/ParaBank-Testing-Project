@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03701fbc-3482-49d5-9644-b7d241b8e1b6" name="Changes" comment="Transfer Funds Test">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/UpdateContactInfoTest.java" afterDir="false" />
+    <list default="true" id="03701fbc-3482-49d5-9644-b7d241b8e1b6" name="Changes" comment="Update Contact Info Test">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/PageBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/RequestLoanTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +59,7 @@
     "TestNG.LoginTest.executor": "Run",
     "TestNG.OpenNewAccount.executor": "Run",
     "TestNG.OpenNewAccount.openNewAccount.executor": "Debug",
+    "TestNG.RequestLoanTest.executor": "Run",
     "TestNG.TransferFundsTest.executor": "Run",
     "TestNG.UpdateContactInfoTest.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
@@ -67,7 +70,8 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="TaskManager">
@@ -118,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777928128425</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Update Contact Info Test">
+      <option name="closed" value="true" />
+      <created>1777929566761</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1777929566761</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +142,7 @@
     <MESSAGE value="Simple LoginTest for testing the ParaBank Website" />
     <MESSAGE value="Open New Account Test" />
     <MESSAGE value="Transfer Funds Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Transfer Funds Test" />
+    <MESSAGE value="Update Contact Info Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Contact Info Test" />
   </component>
 </project>
