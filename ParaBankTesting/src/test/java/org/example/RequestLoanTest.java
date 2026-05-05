@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.pages.LoginPage;
+import org.example.pages.RequestLoanPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -23,30 +25,10 @@ public class RequestLoanTest {
     }
     @Test
     public void requestLoan(){
-        // ---------------------------------------------------------------------------------------
-        WebElement usernameField = driver.findElement(By.name("username"));
-        usernameField.sendKeys("omarovici");
-        WebElement passwordField = driver.findElement(By.name("password"));
-        passwordField.sendKeys("123");
-        WebElement loginButton = driver.findElement(By.xpath("//*[@value=\"Log In\"]"));
-        loginButton.click();
-        // ---------------------------------------------------------------------------------------
-
-        WebElement requestLoanButton = driver.findElement(By.linkText("Request Loan"));
-        requestLoanButton.click();
-
-        WebElement amountField = driver.findElement(By.id("amount"));
-        amountField.sendKeys("100");
-
-        WebElement downPaymentField = driver.findElement(By.id("downPayment"));
-        downPaymentField.sendKeys("50");
-
-        WebElement accountTypeDropList = driver.findElement(By.id("fromAccountId"));
-        Select selectAccountType = new Select(accountTypeDropList);
-        selectAccountType.selectByValue("23223");
-
-        WebElement applyNowButton = driver.findElement(By.xpath("//*[@value=\"Apply Now\"]"));
-        applyNowButton.click();
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.login("omarovici","123");
+        RequestLoanPage requestLoanPage = new RequestLoanPage(driver);
+        requestLoanPage.requestLoan("100","50","23223");
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(1000));
         WebElement failTitle = wait.until(ExpectedConditions.visibilityOfElementLocated(

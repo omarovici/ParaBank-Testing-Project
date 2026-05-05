@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03701fbc-3482-49d5-9644-b7d241b8e1b6" name="Changes" comment="Waiting till the website wake up again">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="03701fbc-3482-49d5-9644-b7d241b8e1b6" name="Changes" comment="Update Contact Info POM Structure">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/RequestLoanPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/RequestLoanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/RequestLoanTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +180,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778012031444</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Update Contact Info POM Structure">
+      <option name="closed" value="true" />
+      <created>1778014734311</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1778014734311</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,7 +206,8 @@
     <MESSAGE value="Open New Account POM Structure" />
     <MESSAGE value="Open New Account Edit" />
     <MESSAGE value="Waiting till the website wake up again" />
-    <option name="LAST_COMMIT_MESSAGE" value="Waiting till the website wake up again" />
+    <MESSAGE value="Update Contact Info POM Structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Contact Info POM Structure" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
