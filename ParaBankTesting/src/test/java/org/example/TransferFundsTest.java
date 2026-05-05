@@ -16,13 +16,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class TransferFundsTest {
-    WebDriver driver;
-    @BeforeTest
-    public void openURL(){
-        driver = new ChromeDriver();
-        driver.get("https://parabank.parasoft.com/parabank/index.htm");
-    }
+public class TransferFundsTest extends TestBase{
     @Test
     public void transferFunds(){
         LoginPage loginPage = new LoginPage(driver);
@@ -37,9 +31,4 @@ public class TransferFundsTest {
         ));
         Assert.assertTrue(successTitle.getText().contains("Transfer Complete!"));
     }
-    @AfterTest
-    public void closeURL(){
-        driver.quit();
-    }
-
 }

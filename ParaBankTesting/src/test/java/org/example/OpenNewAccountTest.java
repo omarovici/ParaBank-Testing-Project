@@ -14,13 +14,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class OpenNewAccountTest {
-    WebDriver driver;
-    @BeforeTest
-    public void openURL(){
-        driver = new ChromeDriver();
-        driver.get("https://parabank.parasoft.com/parabank/index.htm");
-    }
+public class OpenNewAccountTest extends TestBase{
     @Test
     public void openNewAccount() throws InterruptedException {
         LoginPage loginPage = new LoginPage(driver);
@@ -28,9 +22,5 @@ public class OpenNewAccountTest {
         OpenNewAccountPage openNewAccountPage = new OpenNewAccountPage(driver);
         openNewAccountPage.openNewAccount("1",1);
         Assert.assertTrue(openNewAccountPage.successMessage().getText().contains("Congratulations, your account is now open."));
-    }
-    @AfterTest
-    public void closeURL(){
-        driver.quit();
     }
 }

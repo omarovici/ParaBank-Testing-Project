@@ -15,13 +15,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class UpdateContactInfoTest {
-    WebDriver driver;
-    @BeforeTest
-    public void openURL(){
-        driver = new ChromeDriver();
-        driver.get("https://parabank.parasoft.com/parabank/index.htm");
-    }
+public class UpdateContactInfoTest extends TestBase{
     @Test
     public void updateContactInfo(){
         LoginPage loginPage = new LoginPage(driver);
@@ -37,9 +31,4 @@ public class UpdateContactInfoTest {
         Assert.assertTrue(successTitle.getText().contains("Profile Updated"));
 
     }
-    @AfterTest
-    public void closeURL(){
-        driver.quit();
-    }
-
 }

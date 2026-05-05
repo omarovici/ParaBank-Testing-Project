@@ -16,13 +16,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class RequestLoanTest {
-    WebDriver driver;
-    @BeforeTest
-    public void openURL(){
-        driver = new ChromeDriver();
-        driver.get("https://parabank.parasoft.com/parabank/index.htm");
-    }
+public class RequestLoanTest extends TestBase{
     @Test
     public void requestLoan(){
         LoginPage loginPage = new LoginPage(driver);
@@ -36,9 +30,5 @@ public class RequestLoanTest {
         ));
         Assert.assertTrue(failTitle.getText().contains("Congratulations, your loan has been approved."));
         
-    }
-    @AfterTest
-    public void closeURL(){
-        driver.quit();
     }
 }
