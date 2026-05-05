@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.pages.LoginPage;
+import org.example.pages.UpdateContactInfoPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -22,48 +24,11 @@ public class UpdateContactInfoTest {
     }
     @Test
     public void updateContactInfo(){
-        // ---------------------------------------------------------------------------------------
-        WebElement usernameField = driver.findElement(By.name("username"));
-        usernameField.sendKeys("john");
-        WebElement passwordField = driver.findElement(By.name("password"));
-        passwordField.sendKeys("demo");
-        WebElement loginButton = driver.findElement(By.xpath("//*[@value=\"Log In\"]"));
-        loginButton.click();
-        // ---------------------------------------------------------------------------------------
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.login("john","demo");
 
-        WebElement transferFundsButton = driver.findElement(By.linkText("Update Contact Info"));
-        transferFundsButton.click();
-
-        WebElement firstNameField = driver.findElement(By.id("customer.firstName"));
-        firstNameField.clear();
-        firstNameField.sendKeys("Omar - Zeyad");
-
-        WebElement lastNameField = driver.findElement(By.id("customer.lastName"));
-        lastNameField.clear();
-        lastNameField.sendKeys("Khalid - Ahmed");
-
-        WebElement addressStreetField = driver.findElement(By.id("customer.address.street"));
-        addressStreetField.clear();
-        addressStreetField.sendKeys("Egypt");
-
-        WebElement addressCityField = driver.findElement(By.id("customer.address.city"));
-        addressCityField.clear();
-        addressCityField.sendKeys("Egypt");
-
-        WebElement customerAddressStateField = driver.findElement(By.id("customer.address.state"));
-        customerAddressStateField.clear();
-        customerAddressStateField.sendKeys("Cairo");
-
-        WebElement customerAddressZipCodeField = driver.findElement(By.id("customer.address.zipCode"));
-        customerAddressZipCodeField.clear();
-        customerAddressZipCodeField.sendKeys("123456");
-
-        WebElement customerPhoneNumberField = driver.findElement(By.id("customer.phoneNumber"));
-        customerPhoneNumberField.clear();
-        customerPhoneNumberField.sendKeys("0102375981");
-
-        WebElement updateProfileButton = driver.findElement(By.xpath("//*[@value=\"Update Profile\"]"));
-        updateProfileButton.click();
+        UpdateContactInfoPage updateContactInfoPage = new UpdateContactInfoPage(driver);
+        updateContactInfoPage.updateContactInfo("Omar - Zeyad","Khalid - Ahmed","Egypt","Egypt","Cairo","123456","0102375981");
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement successTitle = wait.until(ExpectedConditions.visibilityOfElementLocated(
