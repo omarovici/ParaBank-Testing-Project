@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.pages.LoginPage;
+import org.example.pages.TransferFundsPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -23,31 +25,11 @@ public class TransferFundsTest {
     }
     @Test
     public void transferFunds(){
-        // ---------------------------------------------------------------------------------------
-        WebElement usernameField = driver.findElement(By.name("username"));
-        usernameField.sendKeys("john");
-        WebElement passwordField = driver.findElement(By.name("password"));
-        passwordField.sendKeys("demo");
-        WebElement loginButton = driver.findElement(By.xpath("//*[@value=\"Log In\"]"));
-        loginButton.click();
-        // ---------------------------------------------------------------------------------------
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.login("omarovici","123");
 
-        WebElement transferFundsButton = driver.findElement(By.linkText("Transfer Funds"));
-        transferFundsButton.click();
-
-
-        WebElement amountField = driver.findElement(By.id("amount"));
-        amountField.sendKeys("67.69");
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-        WebElement fromAccountIdDropList = driver.findElement(By.id("fromAccountId"));
-        Select selectFromAccountId = new Select(fromAccountIdDropList);
-        selectFromAccountId.selectByValue("20004");
-        WebElement toAccountIdDropList = driver.findElement(By.id("toAccountId"));
-        Select selectToAccountId = new Select(toAccountIdDropList);
-        selectToAccountId.selectByValue("26331");
-
-        WebElement transferFundsButton2 = driver.findElement(By.xpath("//*[@value=\"Transfer\"]"));
-        transferFundsButton2.click();
+        TransferFundsPage transferFundsPage = new TransferFundsPage(driver);
+        transferFundsPage.transferFunds("67.69",1,1);
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement successTitle = wait.until(ExpectedConditions.visibilityOfElementLocated(

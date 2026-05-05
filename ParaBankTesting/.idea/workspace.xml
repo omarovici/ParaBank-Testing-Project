@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03701fbc-3482-49d5-9644-b7d241b8e1b6" name="Changes" comment="Open New Account POM Structure">
+    <list default="true" id="03701fbc-3482-49d5-9644-b7d241b8e1b6" name="Changes" comment="Open New Account Edit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/TransferFundsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/OpenNewAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/OpenNewAccountPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/PageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/PageBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/OpenNewAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/OpenNewAccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/TransferFundsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/TransferFundsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +69,7 @@
     "TestNG.OpenNewAccount.executor": "Run",
     "TestNG.OpenNewAccount.openNewAccount.executor": "Debug",
     "TestNG.OpenNewAccountTest.executor": "Run",
+    "TestNG.OpenNewAccountTest.openNewAccount.executor": "Debug",
     "TestNG.RequestLoanTest.executor": "Run",
     "TestNG.TransferFundsTest.executor": "Run",
     "TestNG.UpdateContactInfoTest.executor": "Run",
@@ -165,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778008973635</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Open New Account Edit">
+      <option name="closed" value="true" />
+      <created>1778010615008</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1778010615008</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,7 +189,8 @@
     <MESSAGE value="Request Loan Test &amp; Page Base" />
     <MESSAGE value="Trying Login with the POM Structure" />
     <MESSAGE value="Open New Account POM Structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Open New Account POM Structure" />
+    <MESSAGE value="Open New Account Edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Open New Account Edit" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
