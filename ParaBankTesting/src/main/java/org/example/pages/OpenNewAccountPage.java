@@ -6,6 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class OpenNewAccountPage extends PageBase{
     public OpenNewAccountPage(WebDriver driver) {
@@ -24,9 +27,17 @@ public class OpenNewAccountPage extends PageBase{
         openNewAccountButton.click();
         select = new Select(accountTypeDropList);
         select.selectByValue(accountType);
-        Thread.sleep(1000);
+        Thread.sleep(3000);
         select = new Select(transferFundAccountDropList);
         select.selectByIndex(transferFundAccount);
         openNewAccountButton2.click();
+    }
+
+    public WebElement successMessage() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement successTitle = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                By.xpath("//div[@id='openAccountResult']//p")
+        ));
+        return successTitle;
     }
 }

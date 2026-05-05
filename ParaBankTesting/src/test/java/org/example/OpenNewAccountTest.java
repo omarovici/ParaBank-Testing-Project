@@ -27,12 +27,7 @@ public class OpenNewAccountTest {
         loginPage.login("john","demo");
         OpenNewAccountPage openNewAccountPage = new OpenNewAccountPage(driver);
         openNewAccountPage.openNewAccount("1",1);
-
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement successTitle = wait.until(ExpectedConditions.visibilityOfElementLocated(
-                By.xpath("//div[@id='openAccountResult']//p")
-        ));
-        Assert.assertTrue(successTitle.getText().contains("Congratulations, your account is now open."));
+        Assert.assertTrue(openNewAccountPage.successMessage().getText().contains("Congratulations, your account is now open."));
     }
     @AfterTest
     public void closeURL(){
