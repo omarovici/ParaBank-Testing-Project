@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.pages.LoginPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,12 +18,8 @@ public class LoginTest {
     }
     @Test
     public void testLogin(){
-        WebElement usernameField = driver.findElement(By.name("username"));
-        usernameField.sendKeys("john");
-        WebElement passwordField = driver.findElement(By.name("password"));
-        passwordField.sendKeys("demo");
-        WebElement loginButton = driver.findElement(By.xpath("//*[@value=\"Log In\"]"));
-        loginButton.click();
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.login("john","demo");
     }
     @AfterTest
     public void closeURL(){
