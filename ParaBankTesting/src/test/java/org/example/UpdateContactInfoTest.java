@@ -19,16 +19,9 @@ public class UpdateContactInfoTest extends TestBase{
     @Test
     public void updateContactInfo(){
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.login("john","demo");
-
+        loginPage.login("omarovici","123");
         UpdateContactInfoPage updateContactInfoPage = new UpdateContactInfoPage(driver);
         updateContactInfoPage.updateContactInfo("Omar - Zeyad","Khalid - Ahmed","Egypt","Egypt","Cairo","123456","0102375981");
-
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement successTitle = wait.until(ExpectedConditions.visibilityOfElementLocated(
-                By.xpath("//*[@id='updateProfileResult']//*")
-        ));
-        Assert.assertTrue(successTitle.getText().contains("Profile Updated"));
-
+        Assert.assertTrue(updateContactInfoPage.successMessage().getText().contains("Profile Updated"));
     }
 }

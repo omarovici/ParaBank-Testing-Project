@@ -22,13 +22,9 @@ public class RequestLoanTest extends TestBase{
         LoginPage loginPage = new LoginPage(driver);
         loginPage.login("omarovici","123");
         RequestLoanPage requestLoanPage = new RequestLoanPage(driver);
-        requestLoanPage.requestLoan("100","50","23223");
+        requestLoanPage.requestLoan("100","50",1);
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(1000));
-        WebElement failTitle = wait.until(ExpectedConditions.visibilityOfElementLocated(
-                By.xpath("//*[@id='loanRequestApproved']//*")
-        ));
-        Assert.assertTrue(failTitle.getText().contains("Congratulations, your loan has been approved."));
+        Assert.assertTrue(requestLoanPage.successMessage().getText().contains("Congratulations, your loan has been approved."));
         
     }
 }

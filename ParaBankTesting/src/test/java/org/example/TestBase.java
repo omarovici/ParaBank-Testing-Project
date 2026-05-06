@@ -12,8 +12,8 @@ public class TestBase {
         driver = new ChromeDriver();
         driver.get("https://parabank.parasoft.com/parabank/index.htm");
     }
-    @AfterTest
-    public void closeURL(){
-        driver.quit();
-    }
+//    @AfterTest
+//    public void closeURL(){
+//        driver.quit();
+//    }
 }

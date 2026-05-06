@@ -18,17 +18,13 @@ import java.time.Duration;
 
 public class TransferFundsTest extends TestBase{
     @Test
-    public void transferFunds(){
+    public void transferFunds() throws InterruptedException {
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.login("omarovici","123");
+        loginPage.login("omar","123");
 
         TransferFundsPage transferFundsPage = new TransferFundsPage(driver);
-        transferFundsPage.transferFunds("67.69",1,1);
+        transferFundsPage.transferFunds("67.69","13788","14010");
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement successTitle = wait.until(ExpectedConditions.visibilityOfElementLocated(
-                By.xpath("//*[@id='showResult']//*")
-        ));
-        Assert.assertTrue(successTitle.getText().contains("Transfer Complete!"));
+        Assert.assertTrue(transferFundsPage.successMessage().getText().contains("Transfer Complete!"));
     }
 }

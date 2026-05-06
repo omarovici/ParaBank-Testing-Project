@@ -23,10 +23,10 @@ public class OpenNewAccountPage extends PageBase{
     @FindBy(xpath = "//*[@value=\"Open New Account\"]")
     WebElement openNewAccountButton2;
 
-    public void openNewAccount(String accountType, int transferFundAccount) throws InterruptedException {
+    public void openNewAccount(int accountType, int transferFundAccount) throws InterruptedException {
         openNewAccountButton.click();
         select = new Select(accountTypeDropList);
-        select.selectByValue(accountType);
+        select.selectByIndex(accountType);
         Thread.sleep(3000);
         select = new Select(transferFundAccountDropList);
         select.selectByIndex(transferFundAccount);
@@ -34,10 +34,9 @@ public class OpenNewAccountPage extends PageBase{
     }
 
     public WebElement successMessage() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement successTitle = wait.until(ExpectedConditions.visibilityOfElementLocated(
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(
                 By.xpath("//div[@id='openAccountResult']//p")
         ));
-        return successTitle;
     }
 }
