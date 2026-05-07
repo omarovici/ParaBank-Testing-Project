@@ -9,5 +9,7 @@ public class RegisterTest extends TestBase{
     public void registerTest(){
         RegisterPage registerPage = new RegisterPage(driver);
         registerPage.register("Omar","Khalid","Egypt","Cairo","Cairo","1234","010","123","omarovici","123","123");
+//        System.out.println(registerPage.successMessage().getText());
+        Assert.assertTrue(registerPage.successMessage().getText().contains("Your account was created successfully"));
     }
 }
