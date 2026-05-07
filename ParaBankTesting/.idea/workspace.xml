@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03701fbc-3482-49d5-9644-b7d241b8e1b6" name="Changes" comment="Last Edits ISA">
+    <list default="true" id="03701fbc-3482-49d5-9644-b7d241b8e1b6" name="Changes" comment="username edit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/BillPaymentPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/BillPaymentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/OpenNewAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/OpenNewAccountPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/OpenNewAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/OpenNewAccountTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/RegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/RegisterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +65,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.BillPaymentTest.executor": "Run",
     "TestNG.LoginTest.executor": "Run",
     "TestNG.OpenNewAccount.executor": "Run",
     "TestNG.OpenNewAccount.openNewAccount.executor": "Debug",
@@ -232,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778146553071</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="username edit">
+      <option name="closed" value="true" />
+      <created>1778194210784</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1778194210784</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,7 +263,8 @@
     <MESSAGE value="Small Edits" />
     <MESSAGE value="Register Test" />
     <MESSAGE value="Last Edits ISA" />
-    <option name="LAST_COMMIT_MESSAGE" value="Last Edits ISA" />
+    <MESSAGE value="username edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="username edit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
