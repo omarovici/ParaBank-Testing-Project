@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03701fbc-3482-49d5-9644-b7d241b8e1b6" name="Changes" comment="Adding Wait Before Every Navigate In The Home Page">
+    <list default="true" id="03701fbc-3482-49d5-9644-b7d241b8e1b6" name="Changes" comment="Adding Assert in Register Test">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/FindTransactionPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/FindTransactionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/RegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/RegisterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +255,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778196267705</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Adding Assert in Register Test">
+      <option name="closed" value="true" />
+      <created>1778196544506</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1778196544506</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,7 +290,8 @@
     <MESSAGE value="username edit" />
     <MESSAGE value="Bill Payment Test" />
     <MESSAGE value="Adding Wait Before Every Navigate In The Home Page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding Wait Before Every Navigate In The Home Page" />
+    <MESSAGE value="Adding Assert in Register Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Assert in Register Test" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
