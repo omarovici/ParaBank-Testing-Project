@@ -33,6 +33,8 @@ public class UpdateContactInfoPage extends PageBase {
     WebElement updateProfileButton;
 
     public void updateContactInfo(String firstName, String lastName, String addressStreet, String addressCity, String customerAddressState, String customerAddressZipCode, String customerPhoneNumber){
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(updateContactInfoButton));
         updateContactInfoButton.click();
         firstNameField.clear();
         firstNameField.sendKeys(firstName);

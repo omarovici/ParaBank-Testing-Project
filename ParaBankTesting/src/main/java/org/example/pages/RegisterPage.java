@@ -57,4 +57,10 @@ public class RegisterPage extends PageBase{
         repeatedPasswordField.sendKeys(repeatedPassword);
         registerButton.click();
     }
+    public WebElement successMessage() {
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(
+                By.xpath("//*[@id=\"rightPanel\"]//p")
+        ));
+    }
 }

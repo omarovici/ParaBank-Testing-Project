@@ -26,6 +26,8 @@ public class RequestLoanPage extends PageBase{
     WebElement applyNowButton;
 
     public void requestLoan(String amount, String downPayment, int accountType){
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(requestLoanButton));
         requestLoanButton.click();
         amountField.sendKeys(amount);
         downPaymentField.sendKeys(downPayment);

@@ -27,6 +27,8 @@ public class TransferFundsPage extends PageBase{
     WebElement transferFundsButton2;
 
     public void transferFunds(String amount, int fromAccountId, int toAccountId) throws InterruptedException {
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(transferFundsButton));
         transferFundsButton.click();
         amountField.sendKeys(amount);
         Thread.sleep(2000);

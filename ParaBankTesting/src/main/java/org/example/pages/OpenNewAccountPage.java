@@ -24,6 +24,8 @@ public class OpenNewAccountPage extends PageBase{
     WebElement openNewAccountButton2;
 
     public void openNewAccount(int accountType, int transferFundAccount) throws InterruptedException {
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(openNewAccountButton));
         openNewAccountButton.click();
         select = new Select(accountTypeDropList);
         select.selectByIndex(accountType);
