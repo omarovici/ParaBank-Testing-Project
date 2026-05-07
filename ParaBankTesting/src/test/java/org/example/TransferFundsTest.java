@@ -20,10 +20,10 @@ public class TransferFundsTest extends TestBase{
     @Test
     public void transferFunds() throws InterruptedException {
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.login("omar","123");
+        loginPage.login("omarovici","123");
 
         TransferFundsPage transferFundsPage = new TransferFundsPage(driver);
-        transferFundsPage.transferFunds("67.69","13788","14010");
+        transferFundsPage.transferFunds("67.69",1,1);
 
         Assert.assertTrue(transferFundsPage.successMessage().getText().contains("Transfer Complete!"));
     }

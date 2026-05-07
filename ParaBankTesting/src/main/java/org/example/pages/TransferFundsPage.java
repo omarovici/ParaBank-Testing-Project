@@ -26,14 +26,14 @@ public class TransferFundsPage extends PageBase{
     @FindBy(xpath = "//*[@value=\"Transfer\"]")
     WebElement transferFundsButton2;
 
-    public void transferFunds(String amount, String fromAccountId, String toAccountId) throws InterruptedException {
+    public void transferFunds(String amount, int fromAccountId, int toAccountId) throws InterruptedException {
         transferFundsButton.click();
         amountField.sendKeys(amount);
         Thread.sleep(2000);
         select = new Select(fromAccountIdDropList);
-        select.selectByValue(fromAccountId);
+        select.selectByIndex(fromAccountId);
         select = new Select(toAccountIdDropList);
-        select.selectByValue(toAccountId);
+        select.selectByIndex(toAccountId);
         transferFundsButton2.click();
     }
 

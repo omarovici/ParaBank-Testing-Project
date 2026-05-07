@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03701fbc-3482-49d5-9644-b7d241b8e1b6" name="Changes" comment="Small Edits">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/RegisterPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/RegisterTest.java" afterDir="false" />
+    <list default="true" id="03701fbc-3482-49d5-9644-b7d241b8e1b6" name="Changes" comment="Register Test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/TransferFundsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/TransferFundsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/OpenNewAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/OpenNewAccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/TransferFundsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/TransferFundsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778096327003</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Register Test">
+      <option name="closed" value="true" />
+      <created>1778098928556</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1778098928556</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,7 +246,8 @@
     <MESSAGE value="Request Loan Page POM Structure" />
     <MESSAGE value="Adding Test Base" />
     <MESSAGE value="Small Edits" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small Edits" />
+    <MESSAGE value="Register Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Register Test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -18,7 +18,7 @@ public class OpenNewAccountTest extends TestBase{
     @Test
     public void openNewAccount() throws InterruptedException {
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.login("omar","123");
+        loginPage.login("omarovici","123");
         OpenNewAccountPage openNewAccountPage = new OpenNewAccountPage(driver);
         openNewAccountPage.openNewAccount(0,0);
         Assert.assertTrue(openNewAccountPage.successMessage().getText().contains("Congratulations, your account is now open."));
