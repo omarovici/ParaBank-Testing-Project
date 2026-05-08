@@ -31,8 +31,7 @@ public class TransferFundsPage extends PageBase{
         wait.until(ExpectedConditions.elementToBeClickable(transferFundsButton));
         transferFundsButton.click();
         amountField.sendKeys(amount);
-//        Thread.sleep(2000);
-        wait.until(driver -> new Select(fromAccountIdDropList).getOptions().size() > fromAccountId);
+        wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//select[@id='toAccountId']//option")));
         select = new Select(fromAccountIdDropList);
         select.selectByIndex(fromAccountId);
         select = new Select(toAccountIdDropList);

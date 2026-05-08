@@ -29,12 +29,7 @@ public class OpenNewAccountPage extends PageBase{
         openNewAccountButton.click();
         select = new Select(accountTypeDropList);
         select.selectByIndex(accountType);
-//        Thread.sleep(3000);
-//        while (!transferFundAccountDropList.isDisplayed()) {}
-//        while (transferFundAccountDropList.findElements(By.tagName("option")).size() < transferFundAccount) {
-//            break;
-//        }
-        wait.until(driver -> new Select(transferFundAccountDropList).getOptions().size() > transferFundAccount);
+        wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//select[@id='fromAccountId']//option")));
         select = new Select(transferFundAccountDropList);
         select.selectByIndex(transferFundAccount);
         openNewAccountButton2.click();
