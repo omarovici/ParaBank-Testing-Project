@@ -26,12 +26,13 @@ public class TransferFundsPage extends PageBase{
     @FindBy(xpath = "//*[@value=\"Transfer\"]")
     WebElement transferFundsButton2;
 
-    public void transferFunds(String amount, int fromAccountId, int toAccountId) throws InterruptedException {
+    public void transferFunds(String amount, int fromAccountId, int toAccountId) {
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.elementToBeClickable(transferFundsButton));
         transferFundsButton.click();
         amountField.sendKeys(amount);
-        Thread.sleep(2000);
+//        Thread.sleep(2000);
+        wait.until(driver -> new Select(fromAccountIdDropList).getOptions().size() > fromAccountId);
         select = new Select(fromAccountIdDropList);
         select.selectByIndex(fromAccountId);
         select = new Select(toAccountIdDropList);

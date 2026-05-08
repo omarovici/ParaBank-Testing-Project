@@ -16,9 +16,9 @@ import java.time.Duration;
 
 public class OpenNewAccountTest extends TestBase{
     @Test
-    public void openNewAccount() throws InterruptedException {
+    public void openNewAccount() {
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.login("omarovici","123");
+        loginPage.login("john","demo");
         OpenNewAccountPage openNewAccountPage = new OpenNewAccountPage(driver);
         openNewAccountPage.openNewAccount(0,0);
         Assert.assertTrue(openNewAccountPage.successMessage().getText().contains("Congratulations, your account is now open."));

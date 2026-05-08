@@ -20,7 +20,7 @@ public class TransferFundsTest extends TestBase{
     @Test
     public void transferFunds() throws InterruptedException {
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.login("omarovici","123");
+        loginPage.login("john","demo");
 
         TransferFundsPage transferFundsPage = new TransferFundsPage(driver);
         transferFundsPage.transferFunds("67.69",1,1);

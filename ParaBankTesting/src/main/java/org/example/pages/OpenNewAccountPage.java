@@ -23,13 +23,18 @@ public class OpenNewAccountPage extends PageBase{
     @FindBy(xpath = "//*[@value=\"Open New Account\"]")
     WebElement openNewAccountButton2;
 
-    public void openNewAccount(int accountType, int transferFundAccount) throws InterruptedException {
+    public void openNewAccount(int accountType, int transferFundAccount) {
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.elementToBeClickable(openNewAccountButton));
         openNewAccountButton.click();
         select = new Select(accountTypeDropList);
         select.selectByIndex(accountType);
-        Thread.sleep(3000);
+//        Thread.sleep(3000);
+//        while (!transferFundAccountDropList.isDisplayed()) {}
+//        while (transferFundAccountDropList.findElements(By.tagName("option")).size() < transferFundAccount) {
+//            break;
+//        }
+        wait.until(driver -> new Select(transferFundAccountDropList).getOptions().size() > transferFundAccount);
         select = new Select(transferFundAccountDropList);
         select.selectByIndex(transferFundAccount);
         openNewAccountButton2.click();
